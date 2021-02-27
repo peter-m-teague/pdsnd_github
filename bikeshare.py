@@ -111,7 +111,6 @@ def load_data(city, month, day):
         df - Pandas DataFrame containing city data filtered by month and day
     """
     print('\nImporting Data...\n')
-    start_time = time.time()
     
     if city.lower() in ['washington', 'dc', 'd.c.', 'washinghton dc', 'washington d.c.']:
         df = pd.read_csv('washington.csv')
@@ -140,14 +139,14 @@ def load_data(city, month, day):
         print('\nReturning all data for the selected city.')
     
     data_sample = input('\nWould you like to see a data sample? Enter yes or no.\n')
-    if data_sample.lower() in ['yes', 'y']:
+    if data_sample.lower() in ['yes', 'y',  'ye', 'yse']:
         sample_index = 0
         while True:        
             print('Lines {0} through {1} of data:\n'.format(sample_index, sample_index+4))
             print(df.iloc[sample_index:sample_index+5])
             sample_index += 5
             data_sample = input('\nWould you like more data to view? Enter yes or no.\n')
-            if data_sample.lower() not in ['y', 'yes']:
+            if data_sample.lower() not in ['y', 'yes', 'ye', 'yse']:
                 break
     return df
 
@@ -279,7 +278,7 @@ def main():
         user_stats(df)
         
         restart = input('\nWould you like to restart? Enter yes or no.\n')
-        if restart.lower() not in ['yes', 'y']:
+        if restart.lower() not in ['yes', 'y', 'ye', 'yse']:
             break
 
 
