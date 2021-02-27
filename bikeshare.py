@@ -109,7 +109,6 @@ def load_data(city, month, day):
         df - Pandas DataFrame containing city data filtered by month and day
     """
     print('\nImporting Data...\n')
-    start_time = time.time()
     
     if city.lower() in ['washington', 'dc', 'd.c.', 'washinghton dc', 'washington d.c.']:
         df = pd.read_csv('washington.csv')
