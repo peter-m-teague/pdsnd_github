@@ -4,6 +4,7 @@ import time
 import pandas as pd
 import numpy as np
 
+#Dictionary to convert number of day of week to strings
 DAY_OF_WEEK = {0: 'Monday',
                1: 'Tuesday',
                2: 'Wednesday',
@@ -12,6 +13,7 @@ DAY_OF_WEEK = {0: 'Monday',
                5: 'Saturday',
                6: 'Sunday'}
 
+#Dictionary to convert number of month to strings
 MONTHS = {1: 'January',
           2: 'February',
           3: 'March',
