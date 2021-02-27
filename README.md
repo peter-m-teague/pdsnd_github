@@ -17,5 +17,6 @@ new__york_city.csv (not included in git repo)
 washington.csv (not included in git repo)
 
 ### Credits
-Udacity Coursework and repositories
+Udacity coursework and repositories
+Udacity Templates
 
